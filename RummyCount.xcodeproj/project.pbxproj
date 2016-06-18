@@ -14,6 +14,7 @@
 		962730BD1CE7149200EDBF5E /* RummyCountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962730BC1CE7149200EDBF5E /* RummyCountTests.swift */; };
 		962730C81CE7149200EDBF5E /* RummyCountUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962730C71CE7149200EDBF5E /* RummyCountUITests.swift */; };
 		96B185941D1540DE00D1A6D7 /* NewGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B185931D1540DE00D1A6D7 /* NewGameViewController.swift */; };
+		96B185A31D15452E00D1A6D7 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 96B185A11D15452E00D1A6D7 /* Model.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		962730C71CE7149200EDBF5E /* RummyCountUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RummyCountUITests.swift; sourceTree = "<group>"; };
 		962730C91CE7149200EDBF5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		96B185931D1540DE00D1A6D7 /* NewGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewGameViewController.swift; path = NewGameViewController/NewGameViewController.swift; sourceTree = "<group>"; };
+		96B185A21D15452E00D1A6D7 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +139,7 @@
 		96B1859D1D1543D600D1A6D7 /* DataModel */ = {
 			isa = PBXGroup;
 			children = (
+				96B185A11D15452E00D1A6D7 /* Model.xcdatamodeld */,
 			);
 			path = DataModel;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 			files = (
 				962730A81CE7149200EDBF5E /* AppDelegate.swift in Sources */,
 				96B185941D1540DE00D1A6D7 /* NewGameViewController.swift in Sources */,
+				96B185A31D15452E00D1A6D7 /* Model.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -521,6 +525,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		96B185A11D15452E00D1A6D7 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				96B185A21D15452E00D1A6D7 /* Model.xcdatamodel */,
+			);
+			currentVersion = 96B185A21D15452E00D1A6D7 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9627309C1CE7149200EDBF5E /* Project object */;
 }
