@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		962730A81CE7149200EDBF5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962730A71CE7149200EDBF5E /* AppDelegate.swift */; };
-		962730AA1CE7149200EDBF5E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962730A91CE7149200EDBF5E /* ViewController.swift */; };
 		962730AD1CE7149200EDBF5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 962730AB1CE7149200EDBF5E /* Main.storyboard */; };
 		962730AF1CE7149200EDBF5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 962730AE1CE7149200EDBF5E /* Assets.xcassets */; };
 		962730B21CE7149200EDBF5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 962730B01CE7149200EDBF5E /* LaunchScreen.storyboard */; };
 		962730BD1CE7149200EDBF5E /* RummyCountTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962730BC1CE7149200EDBF5E /* RummyCountTests.swift */; };
 		962730C81CE7149200EDBF5E /* RummyCountUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962730C71CE7149200EDBF5E /* RummyCountUITests.swift */; };
+		96B185941D1540DE00D1A6D7 /* NewGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96B185931D1540DE00D1A6D7 /* NewGameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		962730A41CE7149200EDBF5E /* RummyCount.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RummyCount.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		962730A71CE7149200EDBF5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		962730A91CE7149200EDBF5E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		962730AC1CE7149200EDBF5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		962730AE1CE7149200EDBF5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		962730B11CE7149200EDBF5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		962730C31CE7149200EDBF5E /* RummyCountUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RummyCountUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		962730C71CE7149200EDBF5E /* RummyCountUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RummyCountUITests.swift; sourceTree = "<group>"; };
 		962730C91CE7149200EDBF5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96B185931D1540DE00D1A6D7 /* NewGameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NewGameViewController.swift; path = NewGameViewController/NewGameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +97,9 @@
 		962730A61CE7149200EDBF5E /* RummyCount */ = {
 			isa = PBXGroup;
 			children = (
+				96B1859D1D1543D600D1A6D7 /* DataModel */,
+				96B185921D1540C500D1A6D7 /* NewGameViewController */,
 				962730A71CE7149200EDBF5E /* AppDelegate.swift */,
-				962730A91CE7149200EDBF5E /* ViewController.swift */,
 				962730AB1CE7149200EDBF5E /* Main.storyboard */,
 				962730AE1CE7149200EDBF5E /* Assets.xcassets */,
 				962730B01CE7149200EDBF5E /* LaunchScreen.storyboard */,
@@ -123,6 +124,21 @@
 				962730C91CE7149200EDBF5E /* Info.plist */,
 			);
 			path = RummyCountUITests;
+			sourceTree = "<group>";
+		};
+		96B185921D1540C500D1A6D7 /* NewGameViewController */ = {
+			isa = PBXGroup;
+			children = (
+				96B185931D1540DE00D1A6D7 /* NewGameViewController.swift */,
+			);
+			name = NewGameViewController;
+			sourceTree = "<group>";
+		};
+		96B1859D1D1543D600D1A6D7 /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +272,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				962730AA1CE7149200EDBF5E /* ViewController.swift in Sources */,
 				962730A81CE7149200EDBF5E /* AppDelegate.swift in Sources */,
+				96B185941D1540DE00D1A6D7 /* NewGameViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -484,6 +500,7 @@
 				962730CE1CE7149200EDBF5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		962730CF1CE7149200EDBF5E /* Build configuration list for PBXNativeTarget "RummyCountTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +509,7 @@
 				962730D11CE7149200EDBF5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		962730D21CE7149200EDBF5E /* Build configuration list for PBXNativeTarget "RummyCountUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +518,7 @@
 				962730D41CE7149200EDBF5E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
